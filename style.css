@@ -1,0 +1,31 @@
+
+.activity_container{
+    border: 2px outset brown;
+  background-color: lightblue;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.flex-list{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid whitesmoke;
+    margin: 3px;
+    background-color: goldenrod;
+
+}
+
+ul{
+    list-style-type: none;
+}
