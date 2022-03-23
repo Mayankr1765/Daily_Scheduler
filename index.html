@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weekly Task Scheduler</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h2>Pick activity</h2>
     <div class="activity_container">
-        <ul class="flex-container">
-            <li class="flex-list" draggable="true">Gym</li>
-            <li class="flex-list" draggable="true">Reading Book</li>
-            <li class="flex-list" draggable="true">Work</li>
-            <li class="flex-list" draggable="true">Knowledge</li>
-            <li class="flex-list" draggable="true">Family Time</li>
-            <li class="flex-list" draggable="true">Meal Time</li>
-        </ul>
+        <section class="draggable">
+      <ul class="flex-container">
+        <li class="flex-list" draggable="true" >Gym</li>
+        <li class="flex-list" draggable="true" >Reading Book</li>
+        <li class="flex-list" draggable="true" >Work</li>
+        <li class="flex-list" draggable="true" >Knowledge</li>
+        <li class="flex-list" draggable="true" >Family Time</li>
+        <li class="flex-list" draggable="true" >Meal Time</li>
+      </ul>
+    </section>
     </div>
     <div class="schedule_container">
-        <div class="calendar">
-  
-            <header>
-                <button class="secondary" style="align-self: flex-start; flex: 0 0 1">Today</button>
-                <div class="calendar__title" style="display: flex; justify-content: center; align-items: center">
-                  <div class="icon secondary chevron_left">‹</div>
-                  <h1 class="" style="flex: 1;"><span></span><strong>18 JAN – 24 JAN</strong> 2016</h1>
-                  <div class="icon secondary chevron_left">›</div>
-                </div> 
-                <div style="align-self: flex-start; flex: 0 0 1"></div>
-            </header>
-            
-            <div class="outer">
-          
-            
-            <table>
+      <div class="calendar">
+        <header>
+          <button class="secondary" style="align-self: flex-start; flex: 0 0 1">
+            Today
+          </button>
+          <div
+            class="calendar__title"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <div class="icon secondary chevron_left">‹</div>
+            <h1 class="" style="flex: 1">
+              <span></span><strong>18 JAN – 24 JAN</strong> 2016
+            </h1>
+            <div class="icon secondary chevron_left">›</div>
+          </div>
+          <div style="align-self: flex-start; flex: 0 0 1"></div>
+        </header>
+
+        <div class="outer">
+          <table>
             <thead>
               <tr>
                 <th class="headcol"></th>
@@ -48,291 +54,299 @@
                 <th class="secondary">Sun, 24</th>
               </tr>
             </thead>
-            </table>
-          
-          <div class="wrap"> 
-            <table class="offset">
-          
-            <tbody>
-              <tr>
-                <td class="headcol"></td>
-                <td class="accept"></td>
-                <td></td>
-                <td class="past"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">6:00</td>
-                <td></td>
-                <td></td>
-                <td class="past"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td class="past"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">7:00</td>
-                <td></td>
-                <td></td>
-                <td class="past"></td>
-                <td></td>
-                <td></td>
-                <td id="accep"></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td class="now"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">8:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><div class="event double"><input id="check" type="checkbox" class="checkbox" /><label for="check"></label>8:30–9:30 Yoga</div></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">9:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">10:00</td>
-                <td></td>
-                <td></td>
-                <td><div class="event double"><input id="check" type="checkbox" class="checkbox" /><label for="check"></label>10:00–11:00 Meeting</div></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">11:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">12:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">13:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">14:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">15:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">16:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">17:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol">18:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="headcol"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
           </table>
-          </div>
-          </div>
-          </div>
-          
 
+          <div class="wrap">
+            <table class="offset">
+              <tbody>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t1"></td>
+                  <td class="accep" id="t2"></td>
+                  <td class="accep"  id="t3"></td>
+                  <td class="accep" id="t4"></td>
+                  <td class="accep" id="t5"></td>
+                  <td class="accep" id="t6"></td>
+                  <td class="accep" id="t7"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">6:00</td>
+                  <td class="accep" id="t8"></td>
+                  <td class="accep" id="t9"></td>
+                  <td class="past" id="t10"></td>
+                  <td class="accep" id="11"></td>
+                  <td class="accep" id="t12"></td>
+                  <td class="accep" id="t13"></td>
+                  <td class="accep" id="t14"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t15"></td>
+                  <td class="accep" id="t16"></td>
+                  <td class="accep" id="t17"></td>
+                  <td class="accep" id="t18"></td>
+                  <td class="accep" id="t19"></td>
+                  <td class="accep" id="t20"></td>
+                  <td class="accep" id="t21"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">7:00</td>
+                  <td class="accep" id="t22"></td>
+                  <td class="accep" id="t23"></td>
+                  <td class="accep" id="t24"></td>
+                  <td class="accep" id="t25"></td>
+                  <td class="accep" id="t26"></td>
+                  <td class="accep" id="t27"></td>
+                  <td class="accep" id="t28"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t29"></td>
+                  <td class="accep" id="t30"></td>
+                  <td class="accep" id="t31"></td>
+                  <td class="accep" id="t32"></td>
+                  <td class="accep" id="t33"></td>
+                  <td class="accep" id="t34"></td>
+                  <td class="accep" id="t35"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">8:00</td>
+                  <td class="accep" id="t36"></td>
+                  <td class="accep" id="t37"></td>
+                  <td class="accep" id="t38"></td>
+                  <td class="accep" id="t39"></td>
+                  <td class="accep" id="t40"></td>
+                  <td class="accep" id="t41"></td>
+                  <td class="accep" id="t42"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t43"></td>
+                  <td class="accep" id="t44"></td>
+                  <td class="accep" id="t45"></td>
+                  <td class="accep" id="t46"></td>
+                  <td class="accep" id="t47">
+                  </td>
+                  <td class="accep" id="t48"></td>
+                  <td class="accep" id="t49"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">9:00</td>
+                  <td class="accep" id="t50"></td>
+                  <td class="accep" id="t51"></td>
+                  <td class="accep" id="t52"></td>
+                  <td class="accep" id="t53"></td>
+                  <td class="accep" id="t54"></td>
+                  <td class="accep" id="t55"></td>
+                  <td class="accep" id="t56"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t57"></td>
+                  <td class="accep" id="t58"></td>
+                  <td class="accep" id="t59"></td>
+                  <td class="accep" id="t60"></td>
+                  <td class="accep" id="t61"></td>
+                  <td class="accep" id="t62"></td>
+                  <td class="accep" id="t63"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">10:00</td>
+                  <td class="accep" id="t64"></td>
+                  <td class="accep" id="t65"></td>
+                  <td class="accep" id="t66">
+                  </td>
+                  <td class="accep" id="t67"></td>
+                  <td class="accep" id="t68"></td>
+                  <td class="accep" id="t69"></td>
+                  <td class="accep" id="t70"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t71"></td>
+                  <td class="accep" id="t72"></td>
+                  <td class="accep" id="t73"></td>
+                  <td class="accep" id="t74"></td>
+                  <td class="accep" id="t75"></td>
+                  <td class="accep" id="t76"></td>
+                  <td class="accep" id="t77"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">11:00</td>
+                  <td class="accep" id="t78"></td>
+                  <td class="accep" id="t79"></td>
+                  <td class="accep" id="t80"></td>
+                  <td class="accep" id="t81"></td>
+                  <td class="accep" id="t82"></td>
+                  <td class="accep" id="t83"></td>
+                  <td class="accep" id="t84"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t85"></td>
+                  <td class="accep" id="t86"></td>
+                  <td class="accep" id="t87"></td>
+                  <td class="accep" id="t88"></td>
+                  <td class="accep" id="t89"></td>
+                  <td class="accep" id="t90"></td>
+                  <td class="accep" id="t91"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">12:00</td>
+                  <td class="accep" id="t92"></td>
+                  <td class="accep" id="t93"></td>
+                  <td class="accep" id="t94"></td>
+                  <td class="accep" id="t95"></td>
+                  <td class="accep" id="t96"></td>
+                  <td class="accep" id="t97"></td>
+                  <td class="accep" id="t98"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t99"></td>
+                  <td class="accep" id="t100"></td>
+                  <td class="accep" id="t101"></td>
+                  <td class="accep" id="t102"></td>
+                  <td class="accep" id="t103"></td>
+                  <td class="accep" id="t104"></td>
+                  <td class="accep" id="t105"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">13:00</td>
+                  <td class="accep" id="t106"></td>
+                  <td class="accep" id="t107"></td>
+                  <td class="accep" id="t108"></td>
+                  <td class="accep" id="t109"></td>
+                  <td class="accep" id="t110"></td>
+                  <td class="accep" id="t111"></td>
+                  <td class="accep" id="t112"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t113"></td>
+                  <td class="accep" id="t114"></td>
+                  <td class="accep" id="t115"></td>
+                  <td class="accep" id="t116"></td>
+                  <td class="accep" id="t117"></td>
+                  <td class="accep" id="t118"></td>
+                  <td class="accep" id="t119"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">14:00</td>
+                  <td class="accep" id="t120"></td>
+                  <td class="accep" id="t121"></td>
+                  <td class="accep" id="t122"></td>
+                  <td class="accep" id="t123"></td>
+                  <td class="accep" id="t124"></td>
+                  <td class="accep" id="t125"></td>
+                  <td class="accep" id="t126"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t127"></td>
+                  <td class="accep" id="t128"></td>
+                  <td class="accep" id="t129"></td>
+                  <td class="accep" id="t130"></td>
+                  <td class="accep" id="t131"></td>
+                  <td class="accep" id="t132"></td>
+                  <td class="accep" id="t133"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">15:00</td>
+                  <td class="accep" id="t134"></td>
+                  <td class="accep" id="t135"></td>
+                  <td class="accep" id="t136"></td>
+                  <td class="accep" id="t137"></td>
+                  <td class="accep" id="t138"></td>
+                  <td class="accep" id="t139"></td>
+                  <td class="accep" id="t140"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t141"></td>
+                  <td class="accep" id="t142"></td>
+                  <td class="accep" id="t143"></td>
+                  <td class="accep" id="t144"></td>
+                  <td class="accep" id="t145"></td>
+                  <td class="accep" id="t146"></td>
+                  <td class="accep" id="t147"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">16:00</td>
+                  <td class="accep" id="t148"></td>
+                  <td class="accep" id="t149"></td>
+                  <td class="accep" id="t150"></td>
+                  <td class="accep" id="t151"></td>
+                  <td class="accep" id="t152"></td>
+                  <td class="accep" id="t153"></td>
+                  <td class="accep" id="t154"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t155"></td>
+                  <td class="accep" id="t156"></td>
+                  <td class="accep" id="t157"></td>
+                  <td class="accep" id="t158"></td>
+                  <td class="accep" id="t159"></td>
+                  <td class="accep" id="t160"></td>
+                  <td class="accep" id="t161"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">17:00</td>
+                  <td class="accep" id="t162"></td>
+                  <td class="accep" id="t163"></td>
+                  <td class="accep" id="t164"></td>
+                  <td class="accep" id="t165"></td>
+                  <td class="accep" id="t166"></td>
+                  <td class="accep" id="t167"></td>
+                  <td class="accep" id="t168"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t169"></td>
+                  <td class="accep" id="t170"></td>
+                  <td class="accep" id="t171"></td>
+                  <td class="accep" id="t172"></td>
+                  <td class="accep" id="t173"></td>
+                  <td class="accep" id="t174"></td>
+                  <td class="accep" id="t175"></td>
+                </tr>
+                <tr>
+                  <td class="headcol">18:00</td>
+                  <td class="accep" id="t176"></td>
+                  <td class="accep" id="t177"></td>
+                  <td class="accep" id="t178"></td>
+                  <td class="accep" id="t179"></td>
+                  <td class="accep" id="t180"></td>
+                  <td class="accep" id="t181"></td>
+                  <td class="accep" id="t182"></td>
+                </tr>
+                <tr>
+                  <td class="headcol"></td>
+                  <td class="accep" id="t183"></td>
+                  <td class="accep" id="t184"></td>
+                  <td class="accep" id="t185"></td>
+                  <td class="accep" id="t186"></td>
+                  <td class="accep" id="t187"></td>
+                  <td class="accep" id="t188"></td>
+                  <td class="accep" id="t189"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Add Your Task</h1>
+            <input type="text" id="task" placeholder="Enter task" />
+            <button onclick="addTask(event)">Add</button>
+        </div>
     </div>
-    
-</body>
-<script src="index.js"></script>
+
+      
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
